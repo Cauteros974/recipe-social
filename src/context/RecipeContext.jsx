@@ -45,7 +45,7 @@ export const RecipeProvider = ({children}) => {
     };
 
     return(
-        <RecipeContext.Provider value={{recipes, loading}}>
+        <RecipeContext.Provider value={{recipes, loading, addRecipe, toggleLike}}>
             {children}
         </RecipeContext.Provider>
     );
