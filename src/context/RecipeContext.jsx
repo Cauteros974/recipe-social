@@ -37,4 +37,10 @@ export const RecipeProvider = ({children}) => {
     const addRecipe = (newRecipe) => {
         setRecipes([newRecipe, ...recipes]);
     };
+
+    const toggleLike = (id) => {
+        setRecipes(recipes.map(recipes => 
+            recipes.id === id ? {...recipes} : recipes
+        ));
+    }
 }
