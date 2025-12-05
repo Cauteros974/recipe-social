@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, Children } from "react";
 
 export const RecipeContext = createContext();
 
@@ -19,5 +19,17 @@ const MOCK_RECIPED = [
         time: 10,
         author: 'HipsterChef',
         likes: 85,
-    }
-]
+    },
+];
+
+export const RecipeProvider = ({children}) => {
+    const [recipes, setRecipes] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    //Simulation of loading data from the server
+    useEffect(() => {
+        setTimeout(() => {
+            setRecipes(MOCK_RECIPED);
+        })
+    })
+}
