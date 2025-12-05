@@ -30,6 +30,7 @@ export const RecipeProvider = ({children}) => {
     useEffect(() => {
         setTimeout(() => {
             setRecipes(MOCK_RECIPED);
-        })
-    })
+            setLoading(false);
+        }, 1000)
+    }, []);
 }
