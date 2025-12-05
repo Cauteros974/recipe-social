@@ -33,4 +33,8 @@ export const RecipeProvider = ({children}) => {
             setLoading(false);
         }, 1000)
     }, []);
+
+    const addRecipe = (newRecipe) => {
+        setRecipes([newRecipe, ...recipes]);
+    };
 }
