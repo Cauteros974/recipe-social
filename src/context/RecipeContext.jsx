@@ -40,7 +40,13 @@ export const RecipeProvider = ({children}) => {
 
     const toggleLike = (id) => {
         setRecipes(recipes.map(recipes => 
-            recipes.id === id ? {...recipes} : recipes
+            recipes.id === id ? {...recipes, likes: recipe.likes + 1} : recipes
         ));
-    }
-}
+    };
+
+    return(
+        <RecipeContext.Provider value={{recipes, loading}}>
+            {children}
+        </RecipeContext.Provider>
+    );
+};
