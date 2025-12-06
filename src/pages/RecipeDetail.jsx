@@ -23,6 +23,12 @@ const RecipeDetail = () => {
             <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#666', textDecoration: 'none', marginBottom: 15 }}>
                 <ArrowLeft size={16} /> Back
             </Link>
+
+            <img 
+                src={recipe.image} 
+                alt={recipe.title} 
+                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px' }} 
+            />
         </div>
     )
 };
