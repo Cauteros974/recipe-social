@@ -17,6 +17,14 @@ const RecipeDetail = () => {
 
     if (loading) return <div>Loading...</div>;
     if (!recipe) return <div style={{padding: 20}}>Recipe not found 😢 <Link to="/">Return</Link></div>;
+
+    return(
+        <div style={{ maxWidth: '800px', margin: '20px auto', padding: '20px', background: 'white', borderRadius: '15px' }}>
+            <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#666', textDecoration: 'none', marginBottom: 15 }}>
+                <ArrowLeft size={16} /> Back
+            </Link>
+        </div>
+    )
 };
 
 export default RecipeContext;
