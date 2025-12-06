@@ -33,6 +33,9 @@ const RecipeDetail = () => {
             <div style={{padding: '20px 0'}}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <h1 style={{ fontSize: '2rem', margin: '0 0 10px 0' }}>{recipe.title}</h1>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#e74c3c' }}>
+                        <Heart fill="#e74c3c" size={24} /> {recipe.likes}
+                    </span>
                 </div>
             </div>
         </div>
