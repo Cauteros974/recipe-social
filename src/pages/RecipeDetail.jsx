@@ -40,7 +40,9 @@ const RecipeDetail = () => {
 
                 <p style={{ color: '#666', fontSize: '1.1rem' }}>{recipe.description}</p>
 
-                <div style={{display: 'flex', gap: 16}}></div>
+                <div style={{ display: 'flex', gap: 20, marginTop: 15, color: '#555' }}>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 15}}></span>
+                </div>
             </div>
         </div>
     )
