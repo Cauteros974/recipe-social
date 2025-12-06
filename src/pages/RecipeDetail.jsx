@@ -39,6 +39,8 @@ const RecipeDetail = () => {
                 </div>
 
                 <p style={{ color: '#666', fontSize: '1.1rem' }}>{recipe.description}</p>
+
+                <div style={{display: 'flex', gap: 16}}></div>
             </div>
         </div>
     )
