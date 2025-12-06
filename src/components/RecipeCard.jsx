@@ -23,10 +23,12 @@ const RecipeCard = ({recipe}) => {
                         className={styles.button}
                         onClick={() => toggleLike(recipe.id)}
                     >
-
+                        <Heart size={20}></Heart> {recipe.likes}
                     </button>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
+export default RecipeCard;
