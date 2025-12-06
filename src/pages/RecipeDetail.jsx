@@ -48,6 +48,12 @@ const RecipeDetail = () => {
                         <User size={18} /> {recipe.author}
                     </span>
                 </div>
+
+                <hr style={{ margin: '30px 0', border: 'none', borderTop: '1px solid #eee' }} />
+
+                <div style={{display: 'grid', gridTemplateColumns: '1fr 1.5fr',gap: '40px'}}>
+                    
+                </div>
             </div>
         </div>
     )
