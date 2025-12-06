@@ -29,6 +29,12 @@ const RecipeDetail = () => {
                 alt={recipe.title} 
                 style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px' }} 
             />
+
+            <div style={{padding: '20px 0'}}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h1 style={{ fontSize: '2rem', margin: '0 0 10px 0' }}>{recipe.title}</h1>
+                </div>
+            </div>
         </div>
     )
 };
