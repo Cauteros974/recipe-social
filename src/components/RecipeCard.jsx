@@ -11,7 +11,7 @@ const RecipeCard = ({recipe}) => {
             <img src={recipe.image} alt={recipe.title} className={styles.image} />
             <div className={styles.content}>
                 <h3 className={styles.title}>{recipe.title}</h3>
-                <p className={{marginBottom: '10px', color: '#777'}}>From: {recipe.author}</p>
+                <p className={{marginBottom: '10px', color: '#888'}}>From: {recipe.author}</p>
             </div>
         </div>
     )
