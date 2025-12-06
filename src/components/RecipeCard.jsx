@@ -23,7 +23,7 @@ const RecipeCard = ({recipe}) => {
                         className={styles.button}
                         onClick={() => toggleLike(recipe.id)}
                     >
-                        <Heart size={20}></Heart> {recipe.likes}
+                        <Heart size={20} /> {recipe.likes}
                     </button>
                 </div>
             </div>
