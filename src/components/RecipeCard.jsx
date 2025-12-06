@@ -16,8 +16,15 @@ const RecipeCard = ({recipe}) => {
                 <div className={styles.meta}>
                     <div style={{display: 'flex', alignItems: 'center', gap: '5px'}}>
                         <Clock size={16} />
-
+                        {recipe.time} Min
                     </div>
+
+                    <button
+                        className={styles.button}
+                        onClick={() => toggleLike(recipe.id)}
+                    >
+
+                    </button>
                 </div>
             </div>
         </div>
