@@ -37,6 +37,8 @@ const RecipeDetail = () => {
                         <Heart fill="#e74c3c" size={24} /> {recipe.likes}
                     </span>
                 </div>
+
+                <p style={{ color: '#666', fontSize: '1.1rem' }}>{recipe.description}</p>
             </div>
         </div>
     )
