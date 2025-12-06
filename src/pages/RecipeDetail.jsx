@@ -52,7 +52,15 @@ const RecipeDetail = () => {
                 <hr style={{ margin: '30px 0', border: 'none', borderTop: '1px solid #eee' }} />
 
                 <div style={{display: 'grid', gridTemplateColumns: '1fr 1.5fr',gap: '40px'}}>
-                    
+                    {/*Ingredients*/}
+                    <div>
+                        <h3>🛒 Ingredients</h3>
+                        <ul style={{ paddingLeft: 20, lineHeight: 1.6 }}>
+                            {recipe.ingredients.map((ing, i) => (
+                                <li key={i}>{ing}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
