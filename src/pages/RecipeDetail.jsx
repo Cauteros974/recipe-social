@@ -61,6 +61,15 @@ const RecipeDetail = () => {
                             ))}
                         </ul>
                     </div>
+                    {/*Instructions*/}
+                    <div>
+                        <h3>👩‍🍳 Preparation</h3>
+                        <ol style={{ paddingLeft: 20, lineHeight: 1.6 }}>
+                            {recipe.steps.map((step, i) => (
+                                <li key={i} style={{ marginBottom: 10 }}>{step}</li>
+                            ))}
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
