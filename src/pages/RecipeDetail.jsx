@@ -73,7 +73,7 @@ const RecipeDetail = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default RecipeContext;
