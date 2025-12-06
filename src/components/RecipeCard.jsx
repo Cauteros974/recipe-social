@@ -6,5 +6,12 @@ import style from "./RecipeCard.module.css";
 const RecipeCard = ({recipe}) => {
     const {toggleLike} = useContext(RecipeContext);
 
-    
+    return(
+        <div className={style.card}>
+            <img src={recipe.image} alt={recipe.title} className={styles.image} />
+            <div className={styles.content}>
+                <h3 className={styles.title}>{recipe.title}</h3>
+            </div>
+        </div>
+    )
 }
