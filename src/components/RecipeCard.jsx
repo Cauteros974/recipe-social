@@ -14,7 +14,10 @@ const RecipeCard = ({recipe}) => {
                 <p className={{marginBottom: '10px', color: '#888'}}>From: {recipe.author}</p>
 
                 <div className={styles.meta}>
-                    <div style={{display: 'flex', alignItems: 'center'}}></div>
+                    <div style={{display: 'flex', alignItems: 'center', gap: '5px'}}>
+                        <Clock size={12} />
+
+                    </div>
                 </div>
             </div>
         </div>
