@@ -10,3 +10,21 @@ const Navbar = () => (
     <Link to="/create" style={{ color: '#ddd', textDecoration: 'none' }}>Create a recipe</Link>
   </nav>
 );
+
+const CreapePage = () => <h2 style={{ padding: '20px'}}>Creation Page (Under Construction)</h2>;
+
+function App() {
+  return (
+    <RecipeProvider>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Feed />} />
+          <Route path="/create" element={<CreatePage />} />
+        </Routes>
+      </div>
+    </RecipeProvider>
+  );
+}
+
+export default App;
