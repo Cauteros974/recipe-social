@@ -1,33 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route, Link } from "react-router-dom";
+import { RecipeProvider } from "./context/RecipeContext";
+import Feed from "./pages/Feed";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+//Navbar
+const Navbar = () => (
+  <nav style={{ padding: '20px', background: '#333', color: 'white', display: 'flex', gap: '20px'}}>
+    <Link to="/" style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold' }}>🍳 RecipeSocial</Link>
+    <Link to="/" style={{ color: '#ddd', textDecoration: 'none' }}>Feed</Link>
+    <Link to="/create" style={{ color: '#ddd', textDecoration: 'none' }}>Create a recipe</Link>
+  </nav>
+);
