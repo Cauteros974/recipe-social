@@ -7,4 +7,13 @@ const RecipeDetail = () => {
     const {id} = useParams();
     const {getRecipeById, loading} = useContext(RecipeContext);
     const [recipe, setRecipes] = useState(null);
-}
+
+    useEffect(() => {
+        if(!loading) {
+            const found = getRecipeById(id);
+            setRecipes(found);
+        };
+    }, [id, loading, getRecipeById]);
+};
+
+export default RecipeContext;
