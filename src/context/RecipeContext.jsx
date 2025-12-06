@@ -7,10 +7,13 @@ const MOCK_RECIPED = [
     {
         id: 1,
         title: 'Homemade Pizza',
+        description: 'Delicious thin-crust pizza, just like in Italy.',
         image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800',
         time: 40,
         author: 'Mia',
         likes: 120,
+        ingredients: ['Flour 300g', 'Water 200ml', 'Tomatoes 3pcs', 'Mozzarella cheese'],
+        steps: ['Knead the dough', 'Roll out the circle', 'Put in the filling', 'Bake for 15 minutes at 220°C']
     },
     {
         id: 2,
