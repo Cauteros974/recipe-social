@@ -31,7 +31,7 @@ export const RecipeProvider = ({children}) => {
         setTimeout(() => {
             setRecipes(MOCK_RECIPED);
             setLoading(false);
-        }, 1000)
+        }, 1000) //Delay 1sec
     }, []);
 
     const addRecipe = (newRecipe) => {
