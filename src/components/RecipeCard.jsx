@@ -12,6 +12,10 @@ const RecipeCard = ({recipe}) => {
             <div className={styles.content}>
                 <h3 className={styles.title}>{recipe.title}</h3>
                 <p className={{marginBottom: '10px', color: '#888'}}>From: {recipe.author}</p>
+
+                <div className={styles.meta}>
+                    <div style={{display: 'flex', alignItems: 'center'}}></div>
+                </div>
             </div>
         </div>
     )
