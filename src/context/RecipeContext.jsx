@@ -9,7 +9,7 @@ const MOCK_RECIPED = [
         title: 'Homemade Pizza',
         image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800',
         time: 40,
-        author: Mia,
+        author: 'Mia',
         likes: 120,
     },
     {
