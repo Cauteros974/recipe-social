@@ -14,6 +14,9 @@ const RecipeDetail = () => {
             setRecipes(found);
         };
     }, [id, loading, getRecipeById]);
+
+    if (loading) return <div>Loading...</div>;
+    if (!recipe) return <div style={{padding: 20}}>Recipe not found 😢 <Link to="/">Return</Link></div>;
 };
 
 export default RecipeContext;
