@@ -1,0 +1,10 @@
+import { useContext, useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { RecipeContext } from '../context/RecipeContext';
+import { Clock, ArrowLeft, Heart, User } from 'lucide-react';
+
+const RecipeDetail = () => {
+    const {id} = useParams();
+    const {getRecipeById, loading} = useContext(RecipeContext);
+    const [recipe, setRecipes] = useState(null);
+}
