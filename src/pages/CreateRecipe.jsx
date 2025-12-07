@@ -47,6 +47,9 @@ const CreateRecipe = () => {
             ...formData,
             ingridients: formData.ingridients.filter(i => i.trim() !== ''),
             steps: formData.steps.filter(s => s.trim() !== '')
-        }
+        };
+
+        addRecipe(cleanData);
+        navigate('/'); //Go to the main page
     }
 }
