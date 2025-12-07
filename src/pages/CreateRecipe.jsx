@@ -112,6 +112,11 @@ const CreateRecipe = () => {
                             placeholder={'Step description...'}
                             style={{...inputStyle, height: '60px'}}
                         />
+                        {formData.steps.length > 1 &&(
+                            <button type="button" onClick={() => removeField(index, 'steps')} style={{ border: 'none', background: 'transparent', color: 'red', cursor: 'pointer' }}>
+                                <Trash size={18} />
+                            </button>
+                        )}
                     </div>
                 ))}
             </form>
