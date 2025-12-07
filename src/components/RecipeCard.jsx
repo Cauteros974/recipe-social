@@ -2,19 +2,38 @@ import { useContext } from "react";
 import { Clock, Heart } from "lucide-react";
 import { RecipeContext } from "../context/RecipeContext";
 import style from "./RecipeCard.module.css";
+import { Link } from "react-router-dom";
 
-const RecipeCard = ({recipe}) => {
-    const {toggleLike} = useContext(RecipeContext);
+const RecipeCard = ({ recipe }) => {
+    const { toggleLike } = useContext(RecipeContext);
 
-    return(
+    return (
         <div className={style.card}>
-            <img src={recipe.image} alt={recipe.title} className={style.image} />
+            <Link 
+                to={`/recipe/${recipe.id}`} 
+                style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+                <img 
+                    src={recipe.image} 
+                    alt={recipe.title} 
+                    className={style.image} 
+                />
+            </Link>
+
             <div className={style.content}>
-                <h3 className={style.title}>{recipe.title}</h3>
-                <p className={{marginBottom: '10px', color: '#888'}}>From: {recipe.author}</p>
+                <Link 
+                    to={`/recipe/${recipe.id}`} 
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                    <h3 className={style.title}>{recipe.title}</h3>
+                </Link>
+
+                <p style={{ marginBottom: '10px', color: '#888' }}>
+                    From: {recipe.author}
+                </p>
 
                 <div className={style.meta}>
-                    <div style={{display: 'flex', alignItems: 'center', gap: '5px'}}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
                         <Clock size={16} />
                         {recipe.time} Min
                     </div>
