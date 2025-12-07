@@ -51,5 +51,10 @@ const CreateRecipe = () => {
 
         addRecipe(cleanData);
         navigate('/'); //Go to the main page
+    };
+
+    //Input Styles
+    const inputStyle = {
+        width: '100%', padding: '20px', borderRadius: '12px'
     }
 }
