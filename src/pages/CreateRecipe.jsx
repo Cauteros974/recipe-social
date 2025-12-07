@@ -97,8 +97,8 @@ const CreateRecipe = () => {
                         )}
                     </div>
                 ))}
-                <button type="button" onClick={() => addField(index, 'ingridients')}>
-                    
+                <button type="button" onClick={() => addField(index, 'ingridients')} style={{ color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5 }}>
+                    <Plus size={16} /> Add ingridient
                 </button>
             </form>
         </div>
