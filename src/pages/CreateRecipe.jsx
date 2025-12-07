@@ -106,6 +106,12 @@ const CreateRecipe = () => {
                 {formData.steps.map((step, index) => (
                     <div key={index} style={{ display: 'flex', gap: 10, marginBottom: 5 }}>
                         <span style={{paddingTop: 10, fontWeight: 'bold', color: '#ccc'}}>{index+1}.</span>
+                        <textarea
+                            value={step}
+                            onChange={(e) => handleChange(index, e.target.value, 'steps')}
+                            placeholder={'Step description...'}
+                            style={{...inputStyle, height: '60px'}}
+                        />
                     </div>
                 ))}
             </form>
