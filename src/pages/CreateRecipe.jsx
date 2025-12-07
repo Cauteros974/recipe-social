@@ -108,7 +108,7 @@ const CreateRecipe = () => {
                         <span style={{paddingTop: 10, fontWeight: 'bold', color: '#ccc'}}>{index+1}.</span>
                         <textarea
                             value={step}
-                            onChange={(e) => handleChange(index, e.target.value, 'steps')}
+                            onChange={(e) => handleArrayChange(index, e.target.value, 'steps')}
                             placeholder={'Step description...'}
                             style={{...inputStyle, height: '60px'}}
                         />
