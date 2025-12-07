@@ -8,4 +8,12 @@ const CreateRecipe = () => {
     const {addRecipe} = useContext(RecipeContext);
 
     //State of the form
+    const[formData, setFormData] = useState({
+        title: '',
+        description: '',
+        image: 'https://images.unsplash.com/photo-1495521821758-02d0571540fe?w=800',
+        time: '',
+        ingridients: '',
+        steps: ''
+    });
 }
