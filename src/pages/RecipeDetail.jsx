@@ -76,4 +76,4 @@ const RecipeDetail = () => {
     );
 };
 
-export default RecipeContext;
+export default RecipeDetail;

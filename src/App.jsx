@@ -3,7 +3,7 @@ import { RecipeProvider } from "./context/RecipeContext";
 import Navbar from "./components/Navbar";
 import Feed from "./pages/Feed";
 import CreateRecipe from "./pages/CreateRecipe";
-import RecipeCard from "./components/RecipeCard";
+import RecipeDetail from "./pages/RecipeDetail";
 
 function App() {
   return (
