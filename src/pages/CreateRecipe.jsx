@@ -90,6 +90,11 @@ const CreateRecipe = () => {
                             placeholder={`Ingredient ${index + 1}`}
                             style={inputStyle}
                         />
+                        {formData.ingridients.map.length > 1 && (
+                            <button type="button" onClick={() => remoteField(index, 'ingridients')}>
+                                <Trash size={18}/>
+                            </button>
+                        )}
                     </div>
                 ))}
             </form>
