@@ -27,4 +27,8 @@ const CreateRecipe = () => {
         newArray[index] = value;
         setFormData({...formData, [field]: newArray});
     };
+
+    const addField = (field) => {
+        setFormData({...formData, [field]: [...formData[field]]});
+    };
 }
