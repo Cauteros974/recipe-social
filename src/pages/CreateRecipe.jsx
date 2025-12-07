@@ -76,6 +76,7 @@ const CreateRecipe = () => {
                     </div>
                     <div>
                         <label>Link to photo</label>
+                        <input name="image" value={formData.image} onChange={handleChange} style={inputStyle} required />
                     </div>
                 </div>
             </form>
