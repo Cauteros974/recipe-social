@@ -12,8 +12,8 @@ const MOCK_RECIPES = [
     time: 40,
     author: 'Mia',
     likes: 120,
-    ingredients: ['Мука 300г', 'Вода 200мл', 'Томаты 3шт', 'Сыр Моцарелла'],
-    steps: ['Замесить тесто', 'Раскатать круг', 'Выложить начинку', 'Печь 15 мин при 220°C']
+    ingredients: ['Flour 300g', 'Water 200ml', 'Tomatoes 3pcs', 'Mozzarella cheese'],
+    steps: ['Knead the dough', 'Roll out the circle', 'Put in the filling', 'Bake for 15 minutes at 220°C']
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const MOCK_RECIPES = [
     time: 10,
     author: 'HipsterChef',
     likes: 85,
-    ingredients: ['Хлеб 2 куска', 'Авокадо 1шт', 'Соль, Перец', 'Лимонный сок'],
+    ingredients: ['Bread 2 slices', 'Avocado 1 pc', 'Salt, Pepper', 'Lemon juice'],
     steps: ['Toast the bread', 'Mash the avocado with a fork', 'Spread on the bread', 'Sprinkle with spices']
   },
 ];
