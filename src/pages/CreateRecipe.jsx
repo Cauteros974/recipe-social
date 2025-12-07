@@ -100,6 +100,14 @@ const CreateRecipe = () => {
                 <button type="button" onClick={() => addField(index, 'ingridients')} style={{ color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5 }}>
                     <Plus size={16} /> Add ingridient
                 </button>
+
+                {/*Dynamic Steps*/}
+                <h4 style={{margin: '20px 0 10px'}}>Step-by-step recipe</h4>
+                {formData.steps.map((step, index) => (
+                    <div key={index} style={{ display: 'flex', gap: 10, marginBottom: 5 }}>
+                        <span style={{paddingTop: 10, fontWeight: 'bold', color: '#ccc'}}>{index+1}.</span>
+                    </div>
+                ))}
             </form>
         </div>
     );
