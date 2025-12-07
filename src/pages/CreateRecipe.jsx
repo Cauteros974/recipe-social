@@ -97,6 +97,9 @@ const CreateRecipe = () => {
                         )}
                     </div>
                 ))}
+                <button type="button" onClick={() => addField(index, 'ingridients')}>
+                    
+                </button>
             </form>
         </div>
     );
