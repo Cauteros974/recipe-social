@@ -55,6 +55,6 @@ const CreateRecipe = () => {
 
     //Input Styles
     const inputStyle = {
-        width: '100%', padding: '20px', borderRadius: '12px'
+        width: '100%', padding: '20px', borderRadius: '8px'
     }
 }
