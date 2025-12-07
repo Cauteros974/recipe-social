@@ -36,4 +36,17 @@ const CreateRecipe = () => {
         const newArray = formData[field].filter((_, i) => i !== index);
         setFormData({...formData, [field]: newArray});
     };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        //Validation
+        if(!formData.title || !formData.time) return alert('Please fill in the required fields');
+
+        //Clearing empty strings from arrays
+        const cleanData = {
+            ...formData,
+            ingridients: formData.ingridients.filter(i => i.trim() !== ''),
+            steps: formData.steps.filter(s => s.trim() !== '')
+        }
+    }
 }
