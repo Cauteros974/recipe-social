@@ -1,48 +1,25 @@
-import { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { Search } from 'lucide-react';
-import { RecipeContext } from './context/RecipeContext';
+import { Routes, Route } from "react-router-dom";
+import { RecipeProvider } from "./context/RecipeContext";
+import Navbar from "./components/Navbar";
+import Feed from "./pages/Feed";
+import CreateRecipe from "./pages/CreateRecipe";
+import RecipeCard from "./components/RecipeCard";
 
-const Navbar = () => {
-  const { searchQuery, setSearchQuery } = useContext(RecipeContext);
-
+function App() {
   return (
-    <nav style={{ 
-      padding: '15px 20px', 
-      background: '#fff', 
-      boxShadow: '0 2px 5px rgba(0,0,0,0.05)',
-      display: 'flex', 
-      alignItems: 'center', 
-      justifyContent: 'space-between',
-      position: 'sticky',
-      top: 0,
-      zIndex: 100
-    }}>
-      <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-        <Link to="/" style={{ color: '#e67e22', textDecoration: 'none', fontWeight: '900', fontSize: '1.2rem' }}>
-          🍳 SocialCook
-        </Link>
-        <Link to="/create" style={{ color: '#555', textDecoration: 'none' }}>+ Recipe</Link>
+    <RecipeProvider>
+      <div style={{ minHeight: '100vh', background: '#f8f9fa' }}>
+        <Navbar />
+        <div style={{ paddingBottom: '50px' }}>
+          <Routes>
+            <Route path="/" element={<Feed />} />
+            <Route path="/create" element={<CreateRecipe />} />
+            <Route path="/recipe/:id" element={<RecipeDetail />} />
+          </Routes>
+        </div>
       </div>
-
-      <div style={{ position: 'relative' }}>
-        <Search size={18} style={{ position: 'absolute', left: '10px', top: '8px', color: '#999' }} />
-        <input 
-          type="text" 
-          placeholder="Search for recipes..." 
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          style={{
-            padding: '8px 10px 8px 35px',
-            borderRadius: '20px',
-            border: '1px solid #ddd',
-            outline: 'none',
-            width: '200px'
-          }}
-        />
-      </div>
-    </nav>
+    </RecipeProvider>
   );
-};
+}
 
-export default Navbar;
+export default App;
