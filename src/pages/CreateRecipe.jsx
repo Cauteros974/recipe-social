@@ -16,4 +16,15 @@ const CreateRecipe = () => {
         ingridients: [''],
         steps: ['']
     });
+
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value});
+    };
+
+    //Processing dynamic arrays (ingredients/steps)
+    const handleArrayChange = (index, value, field) => {
+        const newArray = [...formData[field]];
+        newArray[index] = value;
+        setFormData({...formData, [field]: newArray});
+    };
 }
