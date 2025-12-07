@@ -59,6 +59,12 @@ const CreateRecipe = () => {
     };
 
     return(
-        <div style={{ maxWidth: '600px', margin: '20px', padding: '30px'}}
+        <div style={{ maxWidth: '600px', margin: '20px auto', padding: '30px', background: 'white', borderRadius: '15px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
+            <h2 style={{ marginBottom: 20 }}>New recipe 🍳</h2>
+            
+            <form onSubmit={handleSubmit}>
+                <label>Name of the dish</label>
+            </form>
+        </div>
     )
 }
