@@ -57,4 +57,8 @@ const CreateRecipe = () => {
     const inputStyle = {
         width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #ddd', marginBottom: '10px'
     };
+
+    return(
+        <div style={{ maxWidth: '600px', margin: '20px', padding: '30px'}}
+    )
 }
