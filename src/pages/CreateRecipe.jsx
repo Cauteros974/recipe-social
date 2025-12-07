@@ -67,7 +67,7 @@ const CreateRecipe = () => {
                 <input name="title" value={formData.title} onChange={handleChange} style={inputStyle} placeholder="For example: Spaghetti Carbonara" required />
                 
                 <label>Description</label>
-                <textarea name="description" value={formData.description} onChange={handleSubmit} style={{...inputStyle, height: '80px'}} placeholder="A few words about the dish..."/>
+                <textarea name="description" value={formData.description} onChange={handleChange} style={{...inputStyle, height: '80px'}} placeholder="A few words about the dish..."/>
             </form>
         </div>
     )
