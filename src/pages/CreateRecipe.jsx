@@ -31,4 +31,8 @@ const CreateRecipe = () => {
     const addField = (field) => {
         setFormData({...formData, [field]: [...formData[field]]});
     };
+
+    const remoteField = (index, field) => {
+        const newArray = formData[field],filter((_) => i !== index);
+    }
 }
