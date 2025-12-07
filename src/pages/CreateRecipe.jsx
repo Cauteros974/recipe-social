@@ -87,6 +87,8 @@ const CreateRecipe = () => {
                         <input
                             value={ing}
                             onChange={(e) => handleArrayChange(index, e.target.value, 'ingredients')}
+                            placeholder={`Ingredient ${index + 1}`}
+                            style={inputStyle}
                         />
                     </div>
                 ))}
