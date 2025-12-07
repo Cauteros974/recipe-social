@@ -81,5 +81,7 @@ const CreateRecipe = () => {
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
+
+export default CreateRecipe;
