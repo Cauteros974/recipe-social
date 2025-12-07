@@ -122,6 +122,12 @@ const CreateRecipe = () => {
                 <button type="buttom" onClick={() => addField('steps')} style={{color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5}}>
                     <Plus size={16} /> Add Step
                 </button>
+
+                <hr style={{margin: '30px 0', borderColor: '#eee'}} />
+
+                <button type="submit" style={{ width: '100%', padding: '20px', background: '#e67e22', color: 'white',border: 'none', borderRadius: '10px', fontSize: '1.1rem', cursor: 'pointer', fontWeight: 'bold'}}>
+                    
+                </button>
             </form>
         </div>
     );
