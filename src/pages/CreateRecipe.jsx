@@ -91,7 +91,7 @@ const CreateRecipe = () => {
                             style={inputStyle}
                         />
                         {formData.ingridients.map.length > 1 && (
-                            <button type="button" onClick={() => remoteField(index, 'ingridients')}>
+                            <button type="button" onClick={() => remoteField(index, 'ingridients')} style={{border: 'none', background: 'transparent', color: 'red', cursor: 'pointer'}}>
                                 <Trash size={18}/>
                             </button>
                         )}
