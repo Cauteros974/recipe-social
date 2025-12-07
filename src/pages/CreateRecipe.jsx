@@ -79,6 +79,17 @@ const CreateRecipe = () => {
                         <input name="image" value={formData.image} onChange={handleChange} style={inputStyle} />
                     </div>
                 </div>
+
+                {/* Dynamic Ingredients */}
+                <h4 style={{margin: '20px 0 10px'}}>Ingredients</h4>
+                {formData.ingridients.map((ing, index) => (
+                    <div key={index} style={{display: 'flex', gap: 10, marginBottom: 5}}>
+                        <input
+                            value={ing}
+                            onChange={(e) => handleArrayChange(index, e.target.value, 'ingredients')}
+                        />
+                    </div>
+                ))}
             </form>
         </div>
     );
