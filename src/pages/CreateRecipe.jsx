@@ -119,6 +119,9 @@ const CreateRecipe = () => {
                         )}
                     </div>
                 ))}
+                <button type="buttom" onClick={() => addField('steps')} style={{color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5}}>
+                    <Plus size={16} /> Add Step
+                </button>
             </form>
         </div>
     );
