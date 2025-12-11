@@ -22,7 +22,12 @@ const ShoppingList = () => {
                             borderBottom: '1px solid #eee',
                             opacity: item.completed ? 0.5 : 1
                         }}>
-
+                            <div 
+                            onClick={() => toggleShoppingItem(item.id)} 
+                            style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', flex: 1 }}
+                            >
+                                
+                            </div>
                         </li>
             }}>
             )}
