@@ -53,6 +53,11 @@ export const RecipeProvider = ({ children }) => {
     localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
   }, [shoppingList]);
 
+  //Recipe methods
+  const addRecips = (newRecipe) => {
+    const recipeWithId = {...newRecipe, id: Date.now(), likes: 0, author: 'Me'};
+  }
+
   useEffect(() => {
     // Query simulation
     setTimeout(() => {
