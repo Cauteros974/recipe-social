@@ -94,7 +94,6 @@ const CreateRecipe = () => {
                         <option value="Dinner">Dinner</option>
                         <option value="Desert">Desert</option>
                         <option value="Drinks">Drinks</option>
-
                     </select>
                 </div>
 
