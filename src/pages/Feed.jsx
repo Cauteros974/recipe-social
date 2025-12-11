@@ -2,10 +2,13 @@ import { useContext } from "react";
 import { RecipeContext } from "../context/RecipeContext";
 import RecipeCard from "../components/RecipeCard";
 
+const CATEGORY = ['Breakfast', 'Lunch', 'Dinner', 'Desert', 'Drinks'];
 const Feed = () => {
     const {recipes, loading } = useContext(RecipeContext);
 
     if(loading) return <div style={{ padding: 20, textAlign: 'center'}}>Loading goodies... 🍳</div>
+
+
 
     return(
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
