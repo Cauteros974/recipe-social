@@ -7,6 +7,7 @@ const MOCK_RECIPES = [
   {
     id: 1,
     title: 'Homemade Pizza',
+    category: 'Dinner',
     Description: 'Delicious thin-crust pizza, just like in Italy.',
     image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800',
     time: 40,
@@ -18,6 +19,7 @@ const MOCK_RECIPES = [
   {
     id: 2,
     title: 'Avocado Toast',
+    category: 'Breakfast',
     description: 'The perfect breakfast in 5 minutes.',
     image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800',
     time: 10,
