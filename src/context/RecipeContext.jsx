@@ -40,7 +40,7 @@ export const RecipeProvider = ({ children }) => {
   const [shoppingList, setshoppingList] = useState(() => {
     const saved = localStorage.getItem('shoppingList');
     return saved ? JSON.parse(saved) : [];
-  }) 
+  }); 
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
