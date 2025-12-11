@@ -41,9 +41,13 @@ export const RecipeProvider = ({ children }) => {
     const saved = localStorage.getItem('shoppingList');
     return saved ? JSON.parse(saved) : [];
   }); 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+
+  useEffect(() => {
+    localStorage.setItem('recipes', JSON.stringify(recipes));
+  }, [recipes]);
 
   useEffect(() => {
     // Query simulation
