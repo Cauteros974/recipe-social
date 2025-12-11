@@ -88,7 +88,14 @@ const CreateRecipe = () => {
                         value={formData.category}
                         onChange={handleChange}
                         style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #ddd'}}
-                    />
+                    >
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Desert">Desert</option>
+                        <option value="Drinks">Drinks</option>
+
+                    </select>
                 </div>
 
                 {/* Dynamic Ingredients */}
