@@ -32,9 +32,9 @@ const MOCK_RECIPES = [
 
 export const RecipeProvider = ({ children }) => {
   //Initialization LocalStorage
-  const [recipes, setRecipes] = useState([] => {
-    const saved = localStorage.getItem('recipes')
-    return saved ? JSON.stringify(await) : MOCK_RECIPES;
+  const [recipes, setRecipes] = useState(() => {
+    const saved = localStorage.getItem('recipes');
+    return saved ? JSON.parse(saved) : MOCK_RECIPES;
   });
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
