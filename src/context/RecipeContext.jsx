@@ -37,14 +37,16 @@ export const RecipeProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : MOCK_RECIPES;
   });
 
-  const [shoppingList, setshoppingList] = useState(() => {
+  const [shoppingList, setShoppingList] = useState(() => {
     const saved = localStorage.getItem('shoppingList');
     return saved ? JSON.parse(saved) : [];
-  }); 
+  });
+
   const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
+  // Save on every change
   useEffect(() => {
     localStorage.setItem('recipes', JSON.stringify(recipes));
   }, [recipes]);
@@ -54,21 +56,8 @@ export const RecipeProvider = ({ children }) => {
   }, [shoppingList]);
 
   //Recipe methods
-  const addRecips = (newRecipe) => {
-    const recipeWithId = {...newRecipe, id: Date.now(), likes: 0, author: 'Me'};
-  }
-
-  useEffect(() => {
-    // Query simulation
-    setTimeout(() => {
-      setRecipes(MOCK_RECIPES);
-      setLoading(false);
-    }, 500);
-  }, []);
-
   const addRecipe = (newRecipe) => {
-    // Generate an ID and add the date
-    const recipeWithId = { ...newRecipe, id: Date.now(), likes: 0, author: 'I (User)' };
+    const recipeWithId = { ...newRecipe, id: Date.now(), likes: 0, author: 'Me' };
     setRecipes([recipeWithId, ...recipes]);
   };
 
@@ -76,13 +65,32 @@ export const RecipeProvider = ({ children }) => {
     setRecipes(recipes.map(r => r.id === id ? { ...r, likes: r.likes + 1 } : r));
   };
 
-  const getRecipeById = (id) => {
-    return recipes.find(r => r.id === parseInt(id));
+  const getRecipeById = (id) => recipes.find(r => r.id === parseInt(id));
+
+  //Shopping list methods
+  const addToShoppingList = (ingredients) => {
+    const newItems = ingredients.map(ing => ({
+      id: Date.now() + Math.random(),
+      text: ing,
+      completed: false
+    }));
+    setShoppingList([...shoppingList, ...newItems]);
   };
 
-  // Filtering for search
+  const toggleShoppingItem = (itemId) => {
+    setShoppingList(shoppingList.map(item => 
+      item.id === itemId ? { ...item, completed: !item.completed } : item
+    ));
+  };
+
+  const removeShoppingItem = (itemId) => {
+    setShoppingList(shoppingList.filter(item => item.id !== itemId));
+  };
+
+  //Filtering for search
   const filteredRecipes = recipes.filter(r => {
-    const matchesSearch = r.title.toLowerCase().includes(searchQuery.toLowerCase()) || r.ingredients.some(ing => ing.toLowerCase().includes(searchQuery.toLowerCase()));
+    const matchesSearch = r.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          r.ingredients.some(ing => ing.toLowerCase().includes(searchQuery.toLowerCase()));
     const matchesCategory = selectedCategory === 'All' || r.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
@@ -94,10 +102,14 @@ export const RecipeProvider = ({ children }) => {
       addRecipe, 
       toggleLike, 
       getRecipeById,
-      searchQuery,
+      searchQuery, 
       setSearchQuery,
       selectedCategory,
-      setSelectedCategory
+      setSelectedCategory,
+      shoppingList,        
+      addToShoppingList,   
+      toggleShoppingItem,  
+      removeShoppingItem   
     }}>
       {children}
     </RecipeContext.Provider>
