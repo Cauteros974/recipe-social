@@ -26,7 +26,10 @@ const ShoppingList = () => {
                             onClick={() => toggleShoppingItem(item.id)} 
                             style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', flex: 1 }}
                             >
-                                
+                                {item.completed ? <CheckSquare color="green" size={20} /> : <Square color="#ccc" size={20} />}
+                                <span style={{ textDecoration: item.completed ? 'line-through' : 'none', fontSize: '1.1rem' }}>
+                                    {item.text}
+                                </span>
                             </div>
                         </li>
             }}>
