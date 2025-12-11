@@ -84,7 +84,10 @@ const CreateRecipe = () => {
                 <div style={{marginBottom: 15}}>
                     <label>Category</label>
                     <select 
-                        name: "category"
+                        name= "category"
+                        value={formData.category}
+                        onChange={handleChange}
+                        style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #ddd'}}
                     />
                 </div>
 
