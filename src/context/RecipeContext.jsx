@@ -36,6 +36,11 @@ export const RecipeProvider = ({ children }) => {
     const saved = localStorage.getItem('recipes');
     return saved ? JSON.parse(saved) : MOCK_RECIPES;
   });
+
+  const [shoppingList, setshoppingList] = useState(() => {
+    const saved = localStorage.getItem('shoppingList');
+    return saved ? JSON.parse(saved) : [];
+  }) 
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
