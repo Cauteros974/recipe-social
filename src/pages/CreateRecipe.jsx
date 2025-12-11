@@ -10,6 +10,7 @@ const CreateRecipe = () => {
     //State of the form
     const[formData, setFormData] = useState({
         title: '',
+        category: 'Breakfast',
         description: '',
         image: 'https://images.unsplash.com/photo-1495521821758-02d0571540fe?w=800',
         time: '',
@@ -78,6 +79,13 @@ const CreateRecipe = () => {
                         <label>Link to photo</label>
                         <input name="image" value={formData.image} onChange={handleChange} style={inputStyle} />
                     </div>
+                </div>
+
+                <div style={{marginBottom: 15}}>
+                    <label>Category</label>
+                    <select 
+                        name: "category"
+                    />
                 </div>
 
                 {/* Dynamic Ingredients */}
