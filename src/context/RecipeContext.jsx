@@ -34,7 +34,7 @@ export const RecipeProvider = ({ children }) => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setselectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('all');
 
   useEffect(() => {
     // Query simulation
@@ -74,7 +74,7 @@ export const RecipeProvider = ({ children }) => {
       searchQuery,
       setSearchQuery,
       selectedCategory,
-      setselectedCategory
+      setSelectedCategory
     }}>
       {children}
     </RecipeContext.Provider>
