@@ -27,7 +27,18 @@ const Timer = () => {
 
     const formatTime = (s) => {
         const mins = Math.floor(s / 60);
-    }
+        const secs = s % 60;
+        return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+    };
+
+    return(
+        <div style={{
+            padding: '15px', background: '#333', color: 'white',
+            borderRadius: '12px', display: 'flex'
+        }}>
+
+        </div>
+    )
 };
 
 export default Timer;
