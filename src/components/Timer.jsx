@@ -37,6 +37,12 @@ const Timer = () => {
             borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '15px'
         }}>
             <AlarmClock size={24} />
+
+            {isActive ? (
+                <span style={{ fontSize: '19,2px', fontWeight: 'bold'}}>{formatTime(seconds)}</span>
+            ): (
+
+            )}
         </div>
     )
 };
