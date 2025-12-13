@@ -70,7 +70,7 @@ const CreateRecipe = () => {
                 <label>Description</label>
                 <textarea name="description" value={formData.description} onChange={handleChange} style={{...inputStyle, height: '80px'}} placeholder="A few words about the dish..."/>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 30 }}>
                     <div>
                         <label>Time (min) *</label>
                         <input type="number" name="time" value={formData.time} onChange={handleChange} style={inputStyle} required />
