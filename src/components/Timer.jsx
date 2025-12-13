@@ -5,6 +5,7 @@ const Timer = () => {
     const [seconds, setSeconds] = useState(0);
     const [isActive, setIsActive] = useState(false);
     const [inputMinutes, setInputMinutes] = useState(0);
+    const [isExpanded, setIsExpaded] = useState(false);
 
     useEffect(() => {
         let interval = null;
@@ -19,6 +20,13 @@ const Timer = () => {
         }
         return () => clearInterval(interval);
     }, [isActive, seconds]);
+
+    const toggleTimer = () => setIsActive(!isActive);
+
+    const resetTimer = () => {
+        setIsActive(false);
+        setSeconds(0);
+    }
 
     const handleStart = () => {
         if(seconds === 0) setSeconds(inputMinutes * 60);
