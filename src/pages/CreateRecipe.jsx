@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import RecipeContext from "./RecipeDetail";
+import RecipeContext from "../context/RecipeContext";
 import { Plus, Trash, Save } from "lucide-react";
 
 const CreateRecipe = () => {
@@ -14,7 +14,7 @@ const CreateRecipe = () => {
         description: '',
         image: 'https://images.unsplash.com/photo-1495521821758-02d0571540fe?w=800',
         time: '',
-        ingridients: [''],
+        ingredients: [''],
         steps: ['']
     });
 
