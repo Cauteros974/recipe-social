@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import pizza from '../../public/images/pizza.jpeg'
 
 export const RecipeContext = createContext();
 
@@ -9,7 +10,7 @@ const MOCK_RECIPES = [
     title: 'Homemade Pizza',
     category: 'Dinner',
     Description: 'Delicious thin-crust pizza, just like in Italy.',
-    image: '/images/pizza.jpeg',
+    image: pizza,
     time: 40,
     author: 'Mia',
     likes: 120,
