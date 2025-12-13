@@ -26,6 +26,13 @@ const Timer = () => {
     const resetTimer = () => {
         setIsActive(false);
         setSeconds(0);
+    };
+
+    const startWithMinutes = () => {
+        if (inputMinutes > 0) {
+            setSeconds(inputMinutes * 60);
+            setIsActive(true);
+        } 
     }
 
     const handleStart = () => {
