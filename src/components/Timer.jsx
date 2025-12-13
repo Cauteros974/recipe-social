@@ -34,9 +34,9 @@ const Timer = () => {
     return(
         <div style={{
             padding: '15px', background: '#333', color: 'white',
-            borderRadius: '12px', display: 'flex'
+            borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '14px'
         }}>
-
+            <AlarmClock size={24} />
         </div>
     )
 };
