@@ -69,6 +69,12 @@ export const RecipeProvider = ({ children }) => {
     return recipes.find(r => r.id === parseInt(id));
   };
 
+  const deleteRecipe = (id) => {
+    if(window.confirm('Are you sure you want to delete this recipe?')) {
+      setRecipes(recipes.filter(r => r.id !== parseInt(id)));
+    }
+  }
+
   //Shopping list methods
   const addToShoppingList = (ingredients) => {
     const newItems = ingredients.map(ing => ({
