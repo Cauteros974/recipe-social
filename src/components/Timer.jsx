@@ -19,6 +19,10 @@ const Timer = () => {
         }
         return () => clearInterval(interval);
     }, [isActive, seconds]);
+
+    const handleStart = () => {
+        if(seconds === 0) setSeconds(inputMinutes * 60);
+    }
 };
 
 export default Timer;
