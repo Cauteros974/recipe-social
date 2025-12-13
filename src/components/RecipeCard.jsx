@@ -40,7 +40,12 @@ const RecipeCard = ({ recipe }) => {
                         background: 'rgba(231, 76, 60, 0.9)',
                         border: 'none',
                         borderRadius: '50%',
-                        width: '30px'
+                        width: '35px',
+                        height: '35px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer'
                     }}
                 >
 
