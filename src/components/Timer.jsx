@@ -39,7 +39,7 @@ const Timer = () => {
             <AlarmClock size={24} />
 
             {isActive ? (
-                <span style={{ fontSize: '19,2px', fontWeight: 'bold'}}>{formatTime(seconds)}</span>
+                <span style={{ fontSize: '1.2rem', fontWeight: 'bold', width: '60px' }}>{formatTime(seconds)}</span>
             ): (
 
             )}
