@@ -46,7 +46,21 @@ const Navbar = () => {
           + Recipe
         </Link>
 
-        
+        {/* Link to shopping list */}
+        <Link 
+          to="/shopping-list" 
+          style={{ 
+            color: '#555', 
+            textDecoration: 'none', 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: 5,
+            transition: 'color 0.3s'
+          }}
+          onMouseEnter={(e) => e.target.style.color = '#e67e22'}
+          onMouseLeave={(e) => e.target.style.color = '#555'}
+        >
+        </Link>
       </div>
 
       <div style={{ position: 'relative' }}>
