@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
 
       {/* Searcg */}
-      <div style={{ position: 'relative', flex: 1, maxWidth: '300px', margin: '0 20px' }}>
+      <div style={{ position: 'relative', flex: 1, maxWidth: '300px', margin: '0 40px' }}>
         <Search size={16} style={{ position: 'absolute', left: '10px', top: '10px', color: '#999' }} />
         <input 
           type="text" 
