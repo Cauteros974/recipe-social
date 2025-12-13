@@ -114,8 +114,18 @@ const CreateRecipe = () => {
                         )}
                     </div>
                 ))}
-                <button type="button" onClick={() => addField(index, 'ingridients')} style={{ color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5 }}>
-                    <Plus size={16} /> Add ingredients
+                <button type="button" onClick={() => addField('ingredients')} 
+                    style={{ 
+                        color: '#e67e22', 
+                        background: 'none', 
+                        border: 'none', 
+                        cursor: 'pointer', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        gap: 5 
+                    }}
+                >
+                    <Plus size={16} /> Add Ingredient
                 </button>
 
                 {/*Dynamic Steps*/}
