@@ -89,8 +89,7 @@ export const RecipeProvider = ({ children }) => {
 
   //Filtering for search
   const filteredRecipes = recipes.filter(r => {
-    const matchesSearch = r.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          r.ingredients.some(ing => ing.toLowerCase().includes(searchQuery.toLowerCase()));
+    const matchesSearch = r.title.toLowerCase().includes(searchQuery.toLowerCase()) || r.ingredients.some(ing => ing.toLowerCase().includes(searchQuery.toLowerCase()));
     const matchesCategory = selectedCategory === 'All' || r.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
