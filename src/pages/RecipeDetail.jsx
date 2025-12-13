@@ -115,7 +115,24 @@ const RecipeDetail = () => {
                     gap: '40px' 
                 }}>
                     {/* Ingredients */}
-                    
+                    <div>
+                        <div style={{ 
+                            display: 'flex', 
+                            justifyContent: 'space-between', 
+                            alignItems: 'center',
+                            marginBottom: 15
+                        }}>
+                            
+                        </div>
+                        
+                        <ul style={{ paddingLeft: 20, lineHeight: 1.8 }}>
+                            {recipe.ingredients.map((ing, i) => (
+                                <li key={i} style={{ marginBottom: 5 }}>
+                                    {ing}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
                     {/* Instructions */}
                     <div>
