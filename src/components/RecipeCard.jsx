@@ -38,6 +38,9 @@ const RecipeCard = ({ recipe }) => {
                         top: '10px',
                         right: '10px',
                         background: 'rgba(231, 76, 60, 0.9)',
+                        border: 'none',
+                        borderRadius: '50%',
+                        width: '30px'
                     }}
                 >
 
