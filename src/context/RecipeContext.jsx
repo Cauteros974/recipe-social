@@ -9,7 +9,7 @@ const MOCK_RECIPES = [
     title: 'Homemade Pizza',
     category: 'Dinner',
     Description: 'Delicious thin-crust pizza, just like in Italy.',
-    image: '/images/pizza.jpg',
+    image: '/images/pizza.jpeg',
     time: 40,
     author: 'Mia',
     likes: 120,
@@ -28,7 +28,6 @@ const MOCK_RECIPES = [
     ingredients: ['Bread 2 slices', 'Avocado 1 pc', 'Salt, Pepper', 'Lemon juice'],
     steps: ['Toast the bread', 'Mash the avocado with a fork', 'Spread on the bread', 'Sprinkle with spices']
   },
-  
 ];
 
 export const RecipeProvider = ({ children }) => {
