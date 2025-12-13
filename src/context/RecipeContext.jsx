@@ -29,6 +29,7 @@ const MOCK_RECIPES = [
     ingredients: ['Bread 2 slices', 'Avocado 1 pc', 'Salt, Pepper', 'Lemon juice'],
     steps: ['Toast the bread', 'Mash the avocado with a fork', 'Spread on the bread', 'Sprinkle with spices']
   },
+  
 ];
 
 export const RecipeProvider = ({ children }) => {
