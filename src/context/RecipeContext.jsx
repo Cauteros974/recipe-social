@@ -9,7 +9,7 @@ const MOCK_RECIPES = [
     title: 'Homemade Pizza',
     category: 'Dinner',
     Description: 'Delicious thin-crust pizza, just like in Italy.',
-    image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800',
+    image: '/images/pizza.jpeg',
     time: 40,
     author: 'Mia',
     likes: 120,
