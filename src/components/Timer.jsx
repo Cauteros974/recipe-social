@@ -48,6 +48,7 @@ const Timer = () => {
                         onChange={(e) => setInputMinutes(e.target.value)}
                         style={{ width: '40px', background: '#444', border: 'none', color: 'white', padding: '5px', borderRadius: '4px' }}
                     />
+                    <span>Min</span>
                 </div>
             )}
         </div>
