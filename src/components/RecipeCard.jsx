@@ -59,7 +59,7 @@ const RecipeCard = ({ recipe }) => {
                         e.target.style.transform = 'scale(1)';
                     }}
                 >
-
+                    <Trash2 size={19}/>
                 </button>
             </Link>
 
