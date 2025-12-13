@@ -4,7 +4,7 @@ import { Search, ShoppingCart } from 'lucide-react';
 import { RecipeContext } from '../context/RecipeContext';
 
 const Navbar = () => {
-  const { searchQuery, setSearchQuery } = useContext(RecipeContext);
+  const { searchQuery, setSearchQuery, shoppingList } = useContext(RecipeContext);
 
   const activeItemsCount = shoppingList.filter(i => !i.completed).length;
 
@@ -21,27 +21,44 @@ const Navbar = () => {
       zIndex: 100
     }}>
       <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-        <Link to="/" style={{ color: '#e67e22', textDecoration: 'none', fontWeight: '900', fontSize: '1.2rem' }}>
+        <Link 
+          to="/" 
+          style={{ 
+            color: '#e67e22', 
+            textDecoration: 'none', 
+            fontWeight: '900', 
+            fontSize: '1.2rem' 
+          }}
+        >
           🍳 SocialCook
         </Link>
-        <Link to="/create" style={{ color: '#555', textDecoration: 'none' }}>+ Recipe</Link>
-
-        {/*Link to shopping list*/}
-        <Link to="/shopping-list" style={{ color: '#555', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 5 }}>
-            <ShoppingCart size={18} />
-            {activeItemsCount > 0 &&(
-              <span style={{
-                background: '#e74c3c', color: 'white', borderRadius: '50%',
-                padding: '2px 6px', fontSize: '0.7rem'
-              }}>
-                {activeItemsCount}
-              </span>
-            )}
+        
+        <Link 
+          to="/create" 
+          style={{ 
+            color: '#555', 
+            textDecoration: 'none',
+            transition: 'color 0.3s'
+          }}
+          onMouseEnter={(e) => e.target.style.color = '#e67e22'}
+          onMouseLeave={(e) => e.target.style.color = '#555'}
+        >
+          + Recipe
         </Link>
+
+        
       </div>
 
       <div style={{ position: 'relative' }}>
-        <Search size={18} style={{ position: 'absolute', left: '10px', top: '8px', color: '#999' }} />
+        <Search 
+          size={18} 
+          style={{ 
+            position: 'absolute', 
+            left: '10px', 
+            top: '8px', 
+            color: '#999' 
+          }} 
+        />
         <input 
           type="text" 
           placeholder="Search for recipes..." 
@@ -52,8 +69,11 @@ const Navbar = () => {
             borderRadius: '20px',
             border: '1px solid #ddd',
             outline: 'none',
-            width: '200px'
+            width: '200px',
+            transition: 'border-color 0.3s'
           }}
+          onFocus={(e) => e.target.style.borderColor = '#e67e22'}
+          onBlur={(e) => e.target.style.borderColor = '#ddd'}
         />
       </div>
     </nav>
