@@ -33,7 +33,7 @@ const CreateRecipe = () => {
         setFormData({...formData, [field]: [...formData[field]]});
     };
 
-    const remoteField = (index, field) => {
+    const removeField = (index, field) => {
         const newArray = formData[field].filter((_, i) => i !== index);
         setFormData({...formData, [field]: newArray});
     };
@@ -108,7 +108,7 @@ const CreateRecipe = () => {
                             style={inputStyle}
                         />
                         {formData.ingridients.map.length > 1 && (
-                            <button type="button" onClick={() => remoteField(index, 'ingridients')} style={{border: 'none', background: 'transparent', color: 'red', cursor: 'pointer'}}>
+                            <button type="button" onClick={() => removeField(index, 'ingridients')} style={{border: 'none', background: 'transparent', color: 'red', cursor: 'pointer'}}>
                                 <Trash size={18}/>
                             </button>
                         )}
@@ -130,7 +130,7 @@ const CreateRecipe = () => {
                             style={{...inputStyle, height: '60px'}}
                         />
                         {formData.steps.length > 1 &&(
-                            <button type="button" onClick={() => remoteField(index, 'steps')} style={{ border: 'none', background: 'transparent', color: 'red', cursor: 'pointer' }}>
+                            <button type="button" onClick={() => removeField(index, 'steps')} style={{ border: 'none', background: 'transparent', color: 'red', cursor: 'pointer' }}>
                                 <Trash size={18} />
                             </button>
                         )}
