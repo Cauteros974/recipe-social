@@ -45,7 +45,10 @@ const RecipeCard = ({ recipe }) => {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        cursor: 'pointer'
+                        cursor: 'pointer',
+                        color: 'white',
+                        transition: 'all 0.3s',
+                        boxShadow: '0 2px 12px rgba(0,0,0,0.2)'
                     }}
                 >
 
