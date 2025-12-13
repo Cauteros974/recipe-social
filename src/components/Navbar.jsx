@@ -67,6 +67,8 @@ const Navbar = () => {
               color: 'white', 
               borderRadius: '50%',
               padding: '2px 6px', 
+              fontSize: '0.7rem',
+              fontWeight: 'bold',
               
             }}>
               {activeItemsCount}
