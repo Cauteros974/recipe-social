@@ -2,11 +2,13 @@ import { useContext, useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { RecipeContext } from '../context/RecipeContext';
 import { Clock, ArrowLeft, Heart, User } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 
 const RecipeDetail = () => {
     const {id} = useParams();
     const {getRecipeById, loading} = useContext(RecipeContext);
     const [recipe, setRecipes] = useState(null);
+    const {addToShoppingList} = useContext(RecipeContext);
 
     useEffect(() => {
         if(!loading) {
@@ -55,6 +57,17 @@ const RecipeDetail = () => {
                     {/*Ingredients*/}
                     <div>
                         <h3>🛒 Ingredients</h3>
+                        <button
+                            onClick={() => {
+                                addToShoppingList(recipe.ingredients);
+                                alert('Ingrdients added to to the list');
+                            }}
+                            style={{
+                                display:'flex', alignItems: 'center', gap: 0
+                            }}
+                        >
+
+                        </button>
                         <ul style={{ paddingLeft: 20, lineHeight: 1.6 }}>
                             {recipe.ingredients.map((ing, i) => (
                                 <li key={i}>{ing}</li>
