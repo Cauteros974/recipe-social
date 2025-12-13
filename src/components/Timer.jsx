@@ -52,8 +52,8 @@ const Timer = () => {
                 </div>
             )}
 
-            <button onClick={handleStart} disabled= {isActive} style={{ background: 'none', border: 'none', color: '#2cc72'}}>
-                <Play size={21} />
+            <button onClick={handleStart} disabled= {isActive} style={{ background: 'none', border: 'none', color: '#2ecc71', cursor: 'pointer'}}>
+                <Play size={20}/>
             </button>
         </div>
     )
