@@ -8,7 +8,7 @@ const RecipeDetail = () => {
     const {id} = useParams();
     const {getRecipeById, loading} = useContext(RecipeContext);
     const [recipe, setRecipes] = useState(null);
-    const {addToShoppingList} = useContext(RecipeContext);
+    
 
     useEffect(() => {
         if(!loading) {
@@ -68,7 +68,7 @@ const RecipeDetail = () => {
                                 padding: '5px 10px', borderRadius: '5px', cursor: 'pointer'
                             }}
                         >
-
+                            <ShoppingCart size={16} /> To the list
                         </button>
                         <ul style={{ paddingLeft: 20, lineHeight: 1.6 }}>
                             {recipe.ingredients.map((ing, i) => (
