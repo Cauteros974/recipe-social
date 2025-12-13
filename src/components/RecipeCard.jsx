@@ -51,7 +51,12 @@ const RecipeCard = ({ recipe }) => {
                         boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
                     }}
                     onMouseEnter={(e) => {
-                        e.target.style.background = 'rgba(192, 57, 55, 1)';
+                        e.target.style.background = 'rgba(192, 57, 43, 1)';
+                        e.target.style.transform = 'scale(1,1)';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.target.style.background = 'rgba(231, 76, 60, 0.9)';
+                        e.target.style.transform = 'scale(1)';
                     }}
                 >
 
