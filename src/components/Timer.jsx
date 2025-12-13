@@ -58,6 +58,9 @@ const Timer = () => {
             <button onClick={() => setIsActive(false)} style={{background: 'none', border: 'none', color: '#f1c40f', cursor: 'pointer'}}>
                 <Pause size={20} />
             </button>
+            <button onClick={() => {setIsActive(false); setSeconds(0);}} style={{background: 'none', border: 'none', color: '#e74c3c', cursor: 'pointer'}}>
+                <RotateCcw size={20} />
+            </button>
         </div>
     )
 };
