@@ -122,7 +122,22 @@ const RecipeDetail = () => {
                             alignItems: 'center',
                             marginBottom: 15
                         }}>
-                            
+                            <h3 style={{ margin: 0 }}>🛒 Ingredients</h3>
+                            <button 
+                                onClick={handleAddToShoppingList}
+                                style={{ 
+                                    display: 'flex', 
+                                    alignItems: 'center', 
+                                    gap: 5,
+                                    background: '#e67e22', 
+                                    color: 'white', 
+                                    border: 'none', 
+                                    padding: '8px 12px', 
+                                }}
+                                
+                            >
+                                <ShoppingCart size={16} /> Add to List
+                            </button>
                         </div>
                         
                         <ul style={{ paddingLeft: 20, lineHeight: 1.8 }}>
