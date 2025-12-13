@@ -92,7 +92,7 @@ const CreateRecipe = () => {
                         <option value="Breakfast">Breakfast</option>
                         <option value="Lunch">Lunch</option>
                         <option value="Dinner">Dinner</option>
-                        <option value="Desert">Desert</option>
+                        <option value="Desert">Dessert</option>
                         <option value="Drinks">Drinks</option>
                     </select>
                 </div>
@@ -136,7 +136,7 @@ const CreateRecipe = () => {
                         )}
                     </div>
                 ))}
-                <button type="buttom" onClick={() => addField('steps')} style={{color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5}}>
+                <button type="button" onClick={() => addField('steps')} style={{color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5}}>
                     <Plus size={16} /> Add Step
                 </button>
 
