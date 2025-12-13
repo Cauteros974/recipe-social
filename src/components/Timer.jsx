@@ -22,6 +22,11 @@ const Timer = () => {
 
     const handleStart = () => {
         if(seconds === 0) setSeconds(inputMinutes * 60);
+        setIsActive(true);
+    };
+
+    const formatTime = (s) => {
+        const mins = Math.floor();
     }
 };
 
