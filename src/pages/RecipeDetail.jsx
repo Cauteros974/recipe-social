@@ -133,6 +133,10 @@ const RecipeDetail = () => {
                                     color: 'white', 
                                     border: 'none', 
                                     padding: '8px 12px', 
+                                    borderRadius: '8px', 
+                                    cursor: 'pointer',
+                                    fontSize: '13px',
+                                    
                                 }}
                                 
                             >
