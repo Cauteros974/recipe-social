@@ -69,7 +69,8 @@ const Navbar = () => {
               padding: '2px 6px', 
               fontSize: '0.7rem',
               fontWeight: 'bold',
-              
+              minWidth: '18px',
+              textAlign: 'center'
             }}>
               {activeItemsCount}
             </span>
