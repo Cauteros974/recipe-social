@@ -38,8 +38,6 @@ const Navbar = () => {
               </span>
             )}
         </Link>
-
-        
       </div>
 
       <div style={{ position: 'relative' }}>
