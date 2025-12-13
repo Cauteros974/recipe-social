@@ -139,7 +139,8 @@ const RecipeDetail = () => {
                                     fontWeight: '500',
                                     transition: 'background 0.3s'
                                 }}
-                                
+                                onMouseEnter={(e) => e.target.style.background = '#d35400'}
+                                onMouseLeave={(e) => e.target.style.background = '#e67e22'}
                             >
                                 <ShoppingCart size={16} /> Add to List
                             </button>
