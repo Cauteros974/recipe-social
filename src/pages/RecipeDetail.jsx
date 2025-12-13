@@ -63,7 +63,9 @@ const RecipeDetail = () => {
                                 alert('Ingrdients added to to the list');
                             }}
                             style={{
-                                display:'flex', alignItems: 'center', gap: 0
+                                display:'flex', alignItems: 'center', gap: 5,
+                                background: '#e67e22', color: 'white', border: 'none', 
+                                padding: '5px 10px', borderRadius: '5px', cursor: 'pointer'
                             }}
                         >
 
