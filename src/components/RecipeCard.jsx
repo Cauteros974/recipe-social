@@ -50,6 +50,9 @@ const RecipeCard = ({ recipe }) => {
                         transition: 'all 0.3s',
                         boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
                     }}
+                    onMouseEnter={(e) => {
+                        e.target.style.background = 'rgba(192, 57, 55, 1)';
+                    }}
                 >
 
                 </button>
