@@ -6,7 +6,7 @@ import { ShoppingCart } from 'lucide-react';
 
 const RecipeDetail = () => {
     const {id} = useParams();
-    const {getRecipeById, loading} = useContext(RecipeContext);
+    const {getRecipeById, loading, addToShoppingList} = useContext(RecipeContext);
     const [recipe, setRecipes] = useState(null);
     
 
@@ -19,6 +19,11 @@ const RecipeDetail = () => {
 
     if (loading) return <div>Loading...</div>;
     if (!recipe) return <div style={{padding: 20}}>Recipe not found 😢 <Link to="/">Return</Link></div>;
+
+    const handleAddToShoppingList = () => {
+        addToShoppingList(recipe.ingredients);
+        alert('Ingredients added to shopping list! ✅');
+    };
 
     return(
         <div style={{ maxWidth: '800px', margin: '20px auto', padding: '20px', background: 'white', borderRadius: '15px' }}>
