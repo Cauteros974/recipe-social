@@ -1,10 +1,12 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Search } from 'lucide-react';
+import { Search, ShoppingCart } from 'lucide-react';
 import { RecipeContext } from '../context/RecipeContext';
 
 const Navbar = () => {
   const { searchQuery, setSearchQuery } = useContext(RecipeContext);
+
+  const activeItemsCount = shoppingList.filter(i => !i.completed).length;
 
   return (
     <nav style={{ 
@@ -23,6 +25,21 @@ const Navbar = () => {
           🍳 SocialCook
         </Link>
         <Link to="/create" style={{ color: '#555', textDecoration: 'none' }}>+ Recipe</Link>
+
+        {/*Link to shopping list*/}
+        <Link to="/shopping-list" style={{ color: '#555', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 5 }}>
+            <ShoppingCart size={18} />
+            {activeItemsCount > 0 &&(
+              <span style={{
+                background: '#e74c3c', color: 'white', borderRadius: '40%',
+
+              }}>
+                {activeItemsCount}
+              </span>
+            ) }
+        </Link>
+
+        
       </div>
 
       <div style={{ position: 'relative' }}>

@@ -130,7 +130,7 @@ const CreateRecipe = () => {
                             style={{...inputStyle, height: '60px'}}
                         />
                         {formData.steps.length > 1 &&(
-                            <button type="button" onClick={() => removeField(index, 'steps')} style={{ border: 'none', background: 'transparent', color: 'red', cursor: 'pointer' }}>
+                            <button type="button" onClick={() => remoteField(index, 'steps')} style={{ border: 'none', background: 'transparent', color: 'red', cursor: 'pointer' }}>
                                 <Trash size={18} />
                             </button>
                         )}
