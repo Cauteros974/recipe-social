@@ -65,7 +65,9 @@ export const RecipeProvider = ({ children }) => {
     setRecipes(recipes.map(r => r.id === id ? { ...r, likes: r.likes + 1 } : r));
   };
 
-  const getRecipeById = (id) => recipes.find(r => r.id === parseInt(id));
+  const getRecipeById = (id) => {
+    return recipes.find(r => r.id === parseInt(id));
+  };
 
   //Shopping list methods
   const addToShoppingList = (ingredients) => {
