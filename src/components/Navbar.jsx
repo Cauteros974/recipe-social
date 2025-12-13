@@ -31,12 +31,12 @@ const Navbar = () => {
             <ShoppingCart size={18} />
             {activeItemsCount > 0 &&(
               <span style={{
-                background: '#e74c3c', color: 'white', borderRadius: '40%',
-
+                background: '#e74c3c', color: 'white', borderRadius: '50%',
+                padding: '2px 6px', fontSize: '0.7rem'
               }}>
                 {activeItemsCount}
               </span>
-            ) }
+            )}
         </Link>
 
         
