@@ -8,7 +8,7 @@ const Timer = () => {
 
     useEffect(() => {
         let interval = null;
-        if (isActive && seconds) {
+        if (isActive && seconds > 0) {
             interval = setInterval(() => {
                 setSeconds((seconds) => seconds - 1);
             }, 1000);
