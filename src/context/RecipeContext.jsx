@@ -9,7 +9,7 @@ const MOCK_RECIPES = [
     title: 'Homemade Pizza',
     category: 'Dinner',
     Description: 'Delicious thin-crust pizza, just like in Italy.',
-    image: '/images/ceaser.jpg',
+    image: '/images/pizza.jpg',
     time: 40,
     author: 'Mia',
     likes: 120,
@@ -116,3 +116,5 @@ export const RecipeProvider = ({ children }) => {
     </RecipeContext.Provider>
   );
 };
+
+export default RecipeContext;
