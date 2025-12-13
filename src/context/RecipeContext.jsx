@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
-import pizza from '../../public/images/pizza.jpeg'
+import pizza from '../../public/images/pizza.jpeg';
 
 export const RecipeContext = createContext();
 
