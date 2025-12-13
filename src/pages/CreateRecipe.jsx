@@ -99,7 +99,7 @@ const CreateRecipe = () => {
 
                 {/* Dynamic Ingredients */}
                 <h4 style={{margin: '20px 0 10px'}}>Ingredients</h4>
-                {formData.ingridients.map((ing, index) => (
+                {formData.ingredients.map((ing, index) => (
                     <div key={index} style={{display: 'flex', gap: 10, marginBottom: 5}}>
                         <input
                             value={ing}
@@ -107,7 +107,7 @@ const CreateRecipe = () => {
                             placeholder={`Ingredient ${index + 1}`}
                             style={inputStyle}
                         />
-                        {formData.ingridients.map.length > 1 && (
+                        {formData.ingredients.map.length > 1 && (
                             <button type="button" onClick={() => removeField(index, 'ingridients')} style={{border: 'none', background: 'transparent', color: 'red', cursor: 'pointer'}}>
                                 <Trash size={18}/>
                             </button>
@@ -115,7 +115,7 @@ const CreateRecipe = () => {
                     </div>
                 ))}
                 <button type="button" onClick={() => addField(index, 'ingridients')} style={{ color: '#e67e22', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5 }}>
-                    <Plus size={16} /> Add ingridient
+                    <Plus size={16} /> Add ingredients
                 </button>
 
                 {/*Dynamic Steps*/}
