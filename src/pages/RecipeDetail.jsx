@@ -136,7 +136,8 @@ const RecipeDetail = () => {
                                     borderRadius: '8px', 
                                     cursor: 'pointer',
                                     fontSize: '13px',
-                                    
+                                    fontWeight: '500',
+                                    transition: 'background 0.3s'
                                 }}
                                 
                             >
