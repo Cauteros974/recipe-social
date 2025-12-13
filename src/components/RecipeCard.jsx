@@ -29,6 +29,19 @@ const RecipeCard = ({ recipe }) => {
                     alt={recipe.title} 
                     className={style.image} 
                 />
+
+                {/*Delete Button*/}
+                <button
+                    onClick={handleDelete}
+                    style={{
+                        position: 'absolute',
+                        top: '10px',
+                        right: '10px',
+                        background: 'rgba(231, 76, 60, 0.9)',
+                    }}
+                >
+
+                </button>
             </Link>
 
             <div className={style.content}>
