@@ -1,11 +1,22 @@
 import { useContext } from "react";
-import { Clock, Heart } from "lucide-react";
+import { Clock, Heart, Trash2 } from "lucide-react";
 import { RecipeContext } from "../context/RecipeContext";
 import style from "./RecipeCard.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const RecipeCard = ({ recipe }) => {
-    const { toggleLike } = useContext(RecipeContext);
+    const { toggleLike, deleteRecipe } = useContext(RecipeContext);
+    const navigate = useNavigate('')
+
+    const handleDelete = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+
+        const deleted = deleteRecipe(recipe.id);
+        if(deleted) {
+            navigate('/'); //Redirect to the main page
+        }
+    };
 
     return (
         <div className={style.card}>

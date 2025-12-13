@@ -119,7 +119,8 @@ export const RecipeProvider = ({ children }) => {
       shoppingList,        
       addToShoppingList,   
       toggleShoppingItem,  
-      removeShoppingItem   
+      removeShoppingItem,
+      deleteRecipe
     }}>
       {children}
     </RecipeContext.Provider>
