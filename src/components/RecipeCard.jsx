@@ -48,7 +48,7 @@ const RecipeCard = ({ recipe }) => {
                         cursor: 'pointer',
                         color: 'white',
                         transition: 'all 0.3s',
-                        boxShadow: '0 2px 12px rgba(0,0,0,0.2)'
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
                     }}
                 >
 
