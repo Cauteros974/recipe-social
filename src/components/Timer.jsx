@@ -26,7 +26,7 @@ const Timer = () => {
     };
 
     const formatTime = (s) => {
-        const mins = Math.floor();
+        const mins = Math.floor(s / 60);
     }
 };
 
