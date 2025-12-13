@@ -72,7 +72,10 @@ export const RecipeProvider = ({ children }) => {
   const deleteRecipe = (id) => {
     if(window.confirm('Are you sure you want to delete this recipe?')) {
       setRecipes(recipes.filter(r => r.id !== parseInt(id)));
+      alert('Recipe deleted successfully! 🗑️');
+      return true;
     }
+    return false;
   }
 
   //Shopping list methods
