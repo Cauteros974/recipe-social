@@ -17,7 +17,8 @@ const Timer = () => {
             if (isActive) alert("Time's up! Time to check the dish! 🔔");
             clearImmediate(interval);
         }
-    })
+        return () => clearInterval(interval);
+    }, [isActive, seconds]);
 };
 
 export default Timer;
