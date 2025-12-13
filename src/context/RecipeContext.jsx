@@ -1,6 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
 
-
 export const RecipeContext = createContext();
 
 //Fake Data
@@ -10,7 +9,7 @@ const MOCK_RECIPES = [
     title: 'Homemade Pizza',
     category: 'Dinner',
     Description: 'Delicious thin-crust pizza, just like in Italy.',
-    image: '/images/pizza.jpeg',
+    image: '/images/ceaser.jpg',
     time: 40,
     author: 'Mia',
     likes: 120,
