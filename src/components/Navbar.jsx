@@ -60,6 +60,18 @@ const Navbar = () => {
           onMouseEnter={(e) => e.target.style.color = '#e67e22'}
           onMouseLeave={(e) => e.target.style.color = '#555'}
         >
+          <ShoppingCart size={18} />
+          {activeItemsCount > 0 && (
+            <span style={{
+              background: '#e74c3c', 
+              color: 'white', 
+              borderRadius: '50%',
+              padding: '2px 6px', 
+              
+            }}>
+              {activeItemsCount}
+            </span>
+          )}
         </Link>
       </div>
 
