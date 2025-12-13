@@ -41,7 +41,13 @@ const Timer = () => {
             {isActive ? (
                 <span style={{ fontSize: '1.2rem', fontWeight: 'bold', width: '60px' }}>{formatTime(seconds)}</span>
             ): (
-
+                <div style={{ display: 'flex', alignItems: 'center', gap: '5px'}}>
+                    <input
+                        type="number"
+                        value={inputMinutes}
+                        onChange={(e) => setInputMinutes(e.target.value)}
+                    />
+                </div>
             )}
         </div>
     )
