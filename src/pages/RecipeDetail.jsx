@@ -30,7 +30,14 @@ const RecipeDetail = () => {
     };
 
     return (
-        <div style={{ maxWidth: '800px', margin: '20px auto', padding: '20px', background: 'white', borderRadius: '15px',boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}}>
+        <div style={{ 
+            maxWidth: '800px', 
+            margin: '20px auto', 
+            padding: '20px', 
+            background: 'white', 
+            borderRadius: '15px',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        }}>
             <Link 
                 to="/" 
                 style={{ 

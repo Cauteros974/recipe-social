@@ -142,7 +142,16 @@ const CreateRecipe = () => {
 
                 <hr style={{margin: '30px 0', borderColor: '#eee'}} />
 
-                <button type="submit" style={{ width: '100%', padding: '15px', background: '#e67e22', color: 'white', border: 'none', borderRadius: '10px', fontSize: '1.1rem', cursor: 'pointer', fontWeight: 'bold' }}>
+                <button type="submit" style={{ 
+                    width: '100%', 
+                    padding: '15px', 
+                    background: '#e67e22', 
+                    color: 'white', 
+                    border: 'none', 
+                    borderRadius: '10px', 
+                    fontSize: '1.1rem', 
+                    cursor: 'pointer', 
+                    fontWeight: 'bold' }}>
                     <Save size={18} style={{ display: 'inline', marginRight: 5 }} /> Publish a recipe
                 </button>
             </form>
