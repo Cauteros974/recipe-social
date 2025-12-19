@@ -177,6 +177,11 @@ const CreateRecipe = () => {
                     </select>
                 </div>
 
+                {/*Image Upload Block*/}
+                <div style={{marginBottom: 20}}>
+                    <label style={{display: 'block', marginBottom: 20}}>Recipe Image</label>
+                </div>
+
                 {/* Dynamic Ingredients */}
                 <h4 style={{ margin: '20px 0 10px' }}>Ingredients</h4>
                 {formData.ingredients.map((ing, index) => (
