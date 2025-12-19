@@ -179,7 +179,7 @@ const CreateRecipe = () => {
 
                 {/*Image Upload Block*/}
                 <div style={{marginBottom: 20}}>
-                    <label style={{display: 'block', marginBottom: 20}}>Recipe Image</label>
+                    <label style={{display: 'block', marginBottom: 10}}>Recipe Image</label>
                 </div>
 
                 {/* Dynamic Ingredients */}
