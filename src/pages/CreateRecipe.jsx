@@ -47,7 +47,13 @@ const CreateRecipe = () => {
             };
             reader.readAsDataURL(file);
         }
-    }
+    };
+    
+    //Image Deletion Function
+    const handleRemoveImage = () => {
+        setFormData({...formData, image: ''});
+        setImagePreview(null);
+    };
 
     // Processing dynamic arrays (ingredients/steps)
     const handleArrayChange = (index, value, field) => {
