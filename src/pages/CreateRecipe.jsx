@@ -236,6 +236,10 @@ const CreateRecipe = () => {
                                     background: 'rgba(231, 76, 60, 0.9)',
                                     border: 'none',
                                     borderRadius: '50%',
+                                    width: '35px',
+                                    height: '35px',
+                                    display: 'flex',
+                                    
                                 }}
                             />
                         </div>
