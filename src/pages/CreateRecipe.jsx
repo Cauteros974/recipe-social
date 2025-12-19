@@ -239,7 +239,11 @@ const CreateRecipe = () => {
                                     width: '35px',
                                     height: '35px',
                                     display: 'flex',
-                                    
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    cursor: 'pointer',
+                                    color: 'white',
+                                    transition: 'all 0.3s'
                                 }}
                             />
                         </div>
