@@ -246,7 +246,11 @@ const CreateRecipe = () => {
                                     transition: 'all 0.3s'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.target.style.background = 'rgba(199, 57, 43, 1)'
+                                    e.target.style.background = 'rgba(192, 57, 43, 1)';
+                                    e.target.style.transform = 'scale(1,1)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.target.background = 'rgba(233, 76, 60, 0.7';
                                 }}
                             />
                         </div>
