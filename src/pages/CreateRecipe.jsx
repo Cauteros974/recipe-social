@@ -214,6 +214,18 @@ const CreateRecipe = () => {
                                 PNG, JPG up to 5MB
                             </p>
                         </label>
+                    ): (
+                        <div style={{position: 'relative'}}>
+                            <img
+                                src={imagePreview}
+                                alt="Preview"
+                                style={{
+                                    width: '100%',
+                                    height: '200px',
+                                    objectFit: 'contain'
+                                }}
+                            />
+                        </div>
                     )}
                 </div>
 
