@@ -144,16 +144,7 @@ const CreateRecipe = () => {
                             required 
                         />
                     </div>
-                    <div>
-                        <label>Image Link</label>
-                        <input 
-                            name="image" 
-                            value={formData.image} 
-                            onChange={handleChange} 
-                            style={inputStyle} 
-                            placeholder="URL or /images/dish.jpg"
-                        />
-                    </div>
+                    
                 </div>
 
                 <div style={{ marginBottom: 15 }}>
@@ -258,6 +249,14 @@ const CreateRecipe = () => {
                             </button>
                         </div>
                     )}
+                    
+                    <input 
+                        id="image-upload"
+                        type="file" 
+                        accept="image/*"
+                        onChange={handleImageUpload}
+                        style={{ display: 'none' }}
+                    />
                 </div>
 
                 {/* Dynamic Ingredients */}
