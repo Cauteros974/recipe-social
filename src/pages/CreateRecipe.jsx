@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { RecipeContext } from "../context/RecipeContext";
-import { Plus, Trash, Save } from "lucide-react";
+import { Plus, Trash, Save, Upload, X } from "lucide-react";
 
 const CreateRecipe = () => {
     const navigate = useNavigate();
@@ -12,11 +12,13 @@ const CreateRecipe = () => {
         title: '',
         category: 'Breakfast',
         description: '',
-        image: '/images/placeholder.jpg',
+        image: '',
         time: '',
         ingredients: [''],
         steps: ['']
     });
+
+    const [imagePreview, setImagePreview] = useState(null);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
