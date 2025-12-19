@@ -14,7 +14,7 @@ const CreateRecipe = () => {
         description: '',
         image: '',
         time: '',
-        ingredients: [''],
+        ingredients: [],
         steps: ['']
     });
 
@@ -144,7 +144,6 @@ const CreateRecipe = () => {
                             required 
                         />
                     </div>
-                    
                 </div>
 
                 <div style={{ marginBottom: 15 }}>
