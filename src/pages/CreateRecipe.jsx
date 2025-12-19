@@ -207,6 +207,9 @@ const CreateRecipe = () => {
                             }}
                         >
                             <Upload size={40} color="#e67e22" />
+                            <p style={{margin: '10px 0 0'}}>
+                                Click to Upload Image
+                            </p>
                         </label>
                     )}
                 </div>
