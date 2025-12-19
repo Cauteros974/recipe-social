@@ -180,6 +180,21 @@ const CreateRecipe = () => {
                 {/*Image Upload Block*/}
                 <div style={{marginBottom: 20}}>
                     <label style={{display: 'block', marginBottom: 10}}>Recipe Image</label>
+
+                    {!imagePreview ? (
+                        <label
+                            htmlFor="image-uploda"
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                width: '100%',
+                            }}
+                        >
+
+                        </label>
+                    )}
                 </div>
 
                 {/* Dynamic Ingredients */}
