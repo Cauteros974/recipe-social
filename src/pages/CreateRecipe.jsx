@@ -207,8 +207,11 @@ const CreateRecipe = () => {
                             }}
                         >
                             <Upload size={40} color="#e67e22" />
-                            <p style={{margin: '10px 0 0'}}>
+                            <p style={{margin: '10px 0 0', color: '#666'}}>
                                 Click to Upload Image
+                            </p>
+                            <p style={{margin: '5px 0 0', fontSize: '12px', color: '#999' }}>
+                                PNG, JPG up to 5MB
                             </p>
                         </label>
                     )}
