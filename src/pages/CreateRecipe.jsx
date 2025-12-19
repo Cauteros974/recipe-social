@@ -24,6 +24,18 @@ const CreateRecipe = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    const handleImageUpload = (e) => {
+        const file = e.target.files[0];
+        
+        if(file) {
+            //Checking the file types
+            if(!file.type.startsWith('image/')){
+                alert('Plese select an image file');
+                return;
+            }
+        }
+    }
+
     // Processing dynamic arrays (ingredients/steps)
     const handleArrayChange = (index, value, field) => {
         const newArray = [...formData[field]];
