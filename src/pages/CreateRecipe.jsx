@@ -34,13 +34,13 @@ const CreateRecipe = () => {
                 return;
             }
 
-            if(file.size = 5 * 1024 * 1024) {
+            if (file.size > 5 * 1024 * 1024) {
                 alert('Image is too large! Maximum size is 5MB.');
                 return;
             }
 
             //Convestion to base64
-            const reader = new FilterRead();
+            const reader = new FileRead();
             reader.onloadend = () => {
                 setFormData({...formData, image: reader.result});
                 setImagePreview(reader.result);
