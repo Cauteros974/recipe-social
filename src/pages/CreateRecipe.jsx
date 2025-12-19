@@ -250,9 +250,12 @@ const CreateRecipe = () => {
                                     e.target.style.transform = 'scale(1,1)';
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.target.background = 'rgba(233, 76, 60, 0.7';
+                                    e.target.background = 'rgba(233, 76, 60, 0.9';
+                                    e.target.transform = 'scale(1)';
                                 }}
-                            />
+                            >
+                                <X size={18} />
+                            </button>
                         </div>
                     )}
                 </div>
