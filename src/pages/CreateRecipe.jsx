@@ -245,6 +245,9 @@ const CreateRecipe = () => {
                                     color: 'white',
                                     transition: 'all 0.3s'
                                 }}
+                                onMouseEnter={(e) => {
+                                    e.target.style.background = 'rgba(199, 57, 43, 1)'
+                                }}
                             />
                         </div>
                     )}
