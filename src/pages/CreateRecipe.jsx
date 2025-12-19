@@ -38,6 +38,12 @@ const CreateRecipe = () => {
                 alert('Image is too large! Maximum size is 5MB.');
                 return;
             }
+
+            //Convestion to base64
+            const read = new FilterRead();
+            reader.onloadend = () => {
+                setFormData({...formData, image: reader.result});
+            }
         }
     }
 
