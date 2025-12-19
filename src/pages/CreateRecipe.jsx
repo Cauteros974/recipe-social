@@ -222,7 +222,18 @@ const CreateRecipe = () => {
                                 style={{
                                     width: '100%',
                                     height: '200px',
-                                    objectFit: 'contain'
+                                    objectFit: 'cover',
+                                    borderRadius: '8px'
+                                }}
+                            />
+                            <button 
+                                type="button"
+                                onClick={{handleRemoveImage}}
+                                style={{
+                                    position: 'absolute',
+                                    top: '10px',
+                                    right: '10px',
+                                    background: 'rgba(231, 76, 60, 0.9)',
                                 }}
                             />
                         </div>
