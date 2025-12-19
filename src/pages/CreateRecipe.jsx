@@ -183,7 +183,7 @@ const CreateRecipe = () => {
 
                     {!imagePreview ? (
                         <label
-                            htmlFor="image-uploda"
+                            htmlFor="image-upload"
                             style={{
                                 display: 'flex',
                                 flexDirection: 'column',
@@ -198,11 +198,15 @@ const CreateRecipe = () => {
                                 transition: 'all 0.3s'
                             }}
                             onMouseEnter={(e) => {
-                                e.target.style.borderColor = '#dddd';
-                                
+                                e.target.style.borderColor = '#e67e22';
+                                e.target.style.background= '#fff5eb';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.target.style.borderColor = '#ddd';
+                                e.target.style.background = '#f9f9f9';
                             }}
                         >
-
+                            <Upload size={40} color="#e67e22" />
                         </label>
                     )}
                 </div>
