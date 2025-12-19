@@ -190,6 +190,8 @@ const CreateRecipe = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 width: '100%',
+                                height: '100px',
+                                border: '4px dashed #ddd'
                             }}
                         >
 
