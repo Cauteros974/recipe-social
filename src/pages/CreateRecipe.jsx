@@ -40,7 +40,7 @@ const CreateRecipe = () => {
             }
 
             //Convestion to base64
-            const reader = new FileRead();
+            const reader = new FileReader();
             reader.onloadend = () => {
                 setFormData({...formData, image: reader.result});
                 setImagePreview(reader.result);
