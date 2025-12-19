@@ -191,7 +191,15 @@ const CreateRecipe = () => {
                                 justifyContent: 'center',
                                 width: '100%',
                                 height: '100px',
-                                border: '4px dashed #ddd'
+                                border: '2px dashed #ddd',
+                                borderRadius: '8px',
+                                cursor: 'pointer',
+                                background: '#f9f9f9',
+                                transition: 'all 0.3s'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.target.style.borderColor = '#dddd';
+                                
                             }}
                         >
 
