@@ -218,7 +218,7 @@ const CreateRecipe = () => {
                             />
                             <button 
                                 type="button"
-                                onClick={{handleRemoveImage}}
+                                onClick={handleRemoveImage}
                                 style={{
                                     position: 'absolute',
                                     top: '10px',
