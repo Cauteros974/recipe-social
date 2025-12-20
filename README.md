@@ -1,16 +1,34 @@
-# React + Vite
+# 🍳 SocialCook — Interactive Recipe Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SocialCook is a modern, full-featured React application designed for food enthusiasts to share recipes, plan shopping, and streamline their cooking process.
 
-Currently, two official plugins are available:
+## 🌟 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **🔍 Smart Search & Filtering:** Instant search by recipe title or ingredients, plus category-based filtering (Breakfast, Lunch, Dinner, etc.).
+* **➕ Recipe Builder:** A robust form for creating recipes with real-time image upload previews (using FileReader API) and dynamic fields for ingredients and cooking steps.
+* **🛒 Shopping List:** One-click ingredient integration from any recipe into a personal checklist with "mark-as-done" functionality.
+* **⏰ Global Cooking Timer:** A persistent timer integrated into the navigation bar that stays active even when browsing different pages.
+* **💾 Persistent Storage:** All data (recipes, likes, shopping items) is automatically synced with **LocalStorage**, ensuring no data loss on page refresh.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Core:** React 18
+* **Build Tool:** Vite (optimized for lightning-fast development)
+* **Routing:** React Router DOM (Seamless SPA experience)
+* **State Management:** React Context API (Global data flow)
+* **Iconography:** Lucide React
+* **Styling:** Clean, responsive CSS-in-JS and Modular UI approach
 
-## Expanding the ESLint configuration
+## 🏗 Architecture & Logic
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project follows a clean, modular structure:
+
+* **`Context API`**: Acts as a lightweight "database" handler, managing global state for recipes, search queries, and the shopping cart.
+* **`Custom Hooks`**: Utilization of `useState` and `useEffect` for managing complex form states and persistent storage synchronization.
+* **`Dynamic Forms`**: Advanced handling of array-based inputs for a flexible recipe creation experience.
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/social-cook.git](https://github.com/your-username/social-cook.git)
