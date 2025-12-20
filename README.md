@@ -1,6 +1,6 @@
-# 🍳 SocialCook — Interactive Recipe Platform
+# 🍳 RecipeSocial — Interactive Recipe Platform
 
-SocialCook is a modern, full-featured React application designed for food enthusiasts to share recipes, plan shopping, and streamline their cooking process.
+RecipeSocial is a modern, full-featured React application designed for food enthusiasts to share recipes, plan shopping, and streamline their cooking process.
 
 ## 🌟 Key Features
 
