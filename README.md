@@ -31,8 +31,7 @@ The project follows a clean, modular structure:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/social-cook.git](https://github.com/your-username/social-cook.git)
-
+   git clone (https://github.com/Cauteros974/recipe-social)
 
 ![alt text](https://github.com/Cauteros974/recipe-social/blob/main/public/images/1.png)
 ![alt text](https://github.com/Cauteros974/recipe-social/blob/main/public/images/2.png)
